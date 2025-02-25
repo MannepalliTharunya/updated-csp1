@@ -1,0 +1,1471 @@
+
+<!DOCTYPE html>
+<html>
+  <body>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-image: url('./clg.avif');
+  background-size: cover;
+
+
+}
+table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: white;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            color: #0C1844;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+
+
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;       
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+
+.tabcontent {
+  color: whitesmoke;
+  display: none;
+  padding : 100px 20px;
+  height: 100%;
+}
+h1{
+  text-align: center;
+  color: black;
+}
+#Home {background-color:orange;}
+#Introduction {background-color:orange;}
+#Abstract {background-color: orange;}
+#data {background-color: white;}
+#Graphs {background-color:whitesmoke;}
+#queries {background-color: orange;}
+#usuage {background-color: orange;}
+#Contact {background-color: orange;}
+
+.centerImage{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+#con{
+  display: flex;
+  height:1000px;
+  width: 1000px;
+
+  .info {
+            display: none;
+            opacity: 0;
+            transition: opacity 1s;
+        }
+        .info.show {
+            display: block;
+            opacity: 1;
+        }
+}
+#submit{
+  background-color:purple ;
+  font-size: 16px;
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            color: white;
+}
+.graph{
+  padding: 2rem;
+  display: inline;
+  cursor: pointer;
+  
+  cursor: pointer;
+
+}
+.graph:hover{
+background-color:black;
+}
+
+</style>
+<script>
+function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+  document.getElementById("myBtn").style.height = "50px";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+
+document.getElementById('image').addEventListener('click', function() {
+            var info = document.getElementById('info');
+            info.classList.toggle('show');
+        });
+
+
+
+</script>
+
+
+
+
+<html>
+  <body>
+    <img src="gist logo.jpg" class="centerImage" width="90"height="100"/>
+   <u> <b><h1>GEETHANJALI INSTITUTE OF SCIENCE AND TECHNOLOGY</h1><br/><br/><br/></b></u>
+
+<button class="tablink" onclick="openPage('Home', this, 'orange')">Home</button>
+<button class="tablink" onclick="openPage('Introduction', this, 'orange')" id="defaultOpen">Introduction</button>
+<button class="tablink" onclick="openPage('Abstract', this, 'orange')">Abstract</button>
+<button class="tablink" onclick="openPage('data', this, 'white')">data</button>
+<button class="tablink" onclick="openPage('Graphs', this, 'whitesmoke')">Graphs</button>
+<button class="tablink" onclick="openPage('queries', this, 'orange')">queries</button>
+<button class="tablink" onclick="openPage('usuage', this, 'orange')">usuage</button>
+<button class="tablink" onclick="openPage('Contact', this, 'orange')">Contact</button>
+
+
+<div id="Home" class="tabcontent">
+
+  <i><h1 text-align="center"> 🗣... SURVEY ON FOOD  DELIVARY APPS BEING   USED BY  PEOPLE...🙋‍♀️</h1></i>
+ <h2> <p>welcome to our community service project. This is the project regarding on online food services where this the survey tells us about how many people are using thiese online food services.As being the students of 2 nd btech from GEETHANJALI INSTITUTE OF SCIENCE AND TECHNOLOGY
+  Food delivery apps have become a significant part of our lives, offering the convenience of having a wide variety of food options delivered right to our doorstep. This survey aims to understand the current trends, usage patterns, and user satisfaction levels with these apps. By gathering insights from users, we hope to identify the most popular apps, the frequency of their use, the factors that influence app choice, and areas where these services can improve.
+
+Objectives
+Identify Popular Apps: Determine which food delivery apps are most frequently used.
+Usage Frequency: Understand how often people use food delivery services.
+User Preferences: Explore the factors that influence the choice of a particular app (e.g., delivery speed, food quality, app interface).
+Satisfaction Levels: Measure how satisfied users are with their food delivery experiences.
+Improvement Areas: Identify any aspects of the service that users feel could be improved.
+Methodology
+The survey was conducted online, targeting a diverse group of participants to get a broad perspective. It included multiple-choice questions, rating scales, and open-ended questions to gather comprehensive data.
+
+Survey Questions
+Popular Apps:
+Which food delivery app do you use the most? (e.g., Uber Eats, DoorDash, Grubhub, etc.)
+Frequency of Use:
+How often do you use food delivery apps? (e.g., daily, weekly, monthly, rarely)
+Factors Influencing Choice:
+What factors influence your choice of a food delivery app? (e.g., delivery speed, food quality, app interface, discounts, etc.)
+User Satisfaction:
+Are you satisfied with the service provided by the food delivery apps? (Rate from 1 to 5)
+Suggestions for Improvement:
+What improvements would you like to see in food delivery apps?
+Results
+The survey results revealed several key insights:
+
+Popular Apps: The majority of respondents favored a few key apps, with [App Name] being the most popular.
+Usage Frequency: Most users reported using food delivery services [Frequency], indicating a high level of integration into their daily routines.
+User Preferences: Factors such as delivery speed, food quality, and discounts were the primary influences on app choice.
+Satisfaction Levels: The average satisfaction rating was [Rating], with many users expressing general contentment but also highlighting areas for improvement.
+Improvement Areas: Common suggestions for improvement included better customer service, more accurate delivery times, and increased food variety.
+Discussion
+The findings from the survey highlight the significant role that food delivery apps play in modern dining habits. While users appreciate the convenience and variety offered by these services, there are clear areas where improvements can be made to enhance user satisfaction. Addressing these areas can help service providers better meet the needs of their customers and stay competitive in a growing market.
+
+
+
+ </p></h2></div></div>
+ 
+</div>
+
+<div id="Introduction" class="tabcontent">
+  <u><h1> 🕵 Introduction</h1></u>
+  <h3><p>Consumer perception on food apps” where the objectives of this
+    research is to examine the consumer perception on food apps and to
+    analyse the factors that influences consumer perception towards food
+    apps. To understand the research more deeper, a survey method was
+    conducted where a questionnaire was sent to all segments of people
+    like age, gender and income and the questionnaire was designed on
+    the basis of TAM model. A T-Test analysis was also undertaken to give a
+    better interpretation about this study and an overall conclusion is given
+    regarding the learning from this research about how people perceived
+    food apps, how could this research could be done better and what
+    learnings did the researcher learned during this research project.
+     Key words :- Consumer Perception, Zomato, Swiggy, Food
+    apps, Digital Payments, Consumer Buying Behavior, Business 
+    Introduction Zomato is one of the leading online food delivery services,
+    and recently, it acquired UberEATS for around $350 million. This
+    resulted in capturing nearly 50-55% of the market share in terms of
+    numbers of orders, getting ahead of their closest competitor Swiggy (E
+    Tech. 2020). Swiggy started in 2014, and made a late entry into a vast
+    market, and the only competition was Zomato, which was the leader of
+    the food tech industry. Within 4 years, Swiggy has joined an elite list of
+    start-ups, and their competition with Zomato is so severe and intense at
+    present that the latter is investing in hundreds of crores to catch up with
+    Swiggy (Live mint, 2020).
+     Since the merger of Zomato and UberEATS, there is ank
+    expectation that the market share is going to reach between 50-55% on
+    the basis of current numbers thus overtaking Swiggy. Overall, the
+    competition between Swiggy and Zomato has been intense, but
+    Swiggy is at the top with the highest repeat order rates, and it's the
+    customer's favourite app to order from. According to a stat, about 90%
+    of consumers choose only Swiggy (E Tech, 2020). The Indian online
+    food industry is expected to grow up to $12.3 billion by 2023. The
+    global growth is 9.01%, the online food delivery market in India is
+    growing at a rate of 15%. Swiggy has sales of $1.5 billion, whereas
+    Zomato is at sales of $800 million. Jointly both the companies have
+    9
+    delivered 96 million orders from April 2017 to March 2018.
+    (Visakhapatnam News, 2020). The diversity of applications including
+    food apps, has become very important for the business to innovate and
+    enthral existing consumers. There is little evidence about how the
+    internet and mobile technology has supported consumers in meeting
+    their daily demands by using a display to order from their preferred
+    restaurants. The importance of this research is that it defines
+    consumers' attitudes towards the utilizing of food apps, and how these
+    apps have built-in purchasing, planning, and socially enjoying meals
+    and snacks (Levin, Heath, and LeVangie, 2015). The increase in income
+    of the family members, changing lifestyle and eating patterns have to
+    lead to an increase in market growth.
+    Over view of food delivery apps
+    1. Zomato:
+    ➢ Zomato is a popular online food ordering and restaurant
+    discovery platform. It was founded in 2008 and is based in
+    India. Zomato provides a range of services related to food,
+    including restaurant search, discovery, ordering and
+    delivery, and reviews and ratings.
+    ➢ With Zomato, users can search for restaurants based on
+    location, cuisine, ratings, and price range. They can also
+    view menus, photos, and reviews of each restaurant to make
+    informed decisions about where to dine. Users can also
+    order food directly from the platform and track the delivery
+    status in real-time.
+    ➢ In addition to its consumer-facing services, Zomato also
+    provides a range of tools and services for restaurants. These
+    include online ordering systems, table reservations, and
+    marketing tools to help restaurants reach a larger audience.
+    ➢ Zomato has expanded globally and is now available in over
+    25 countries, including the United States, United Kingdom,
+    Australia, and Canada. The company has also diversified
+    into other areas, such as grocery delivery and online event
+    booking
+    10
+    2. Swiggy:
+    ➢ It is India's largest online food ordering and delivery
+    platform. Founded in July 2014, Swiggy is based in
+    Bangalore and operates in 500 Indian cities as of September
+    2021. Swiggy was founded by BITS Pilani graduates Nandan
+    Reddy and Sriharsha Majety, who had the brilliant idea of
+    changing the way India eats through hyperlocal food
+    delivery.
+    ➢ They saw an untapped gap between food ordering and
+    delivery in India and decided to make an indelible mark
+    there. Swiggy's business model is based on bridging that
+    very gap. As revolutionary as this idea was, they wanted
+    ➢ Swiggy is the apex of Bundle Technologies, the previous
+    venture of these two geniuses. It's been quite a journey from
+    an abstract idea to over 5 lakh mobile app installations for
+    Swiggy.
+    ➢ Now that we had discussed what is Swiggy and when and by
+    whom it was founded, let's move to the next part of the story.
+    Let us dive deep into how Swiggy works.
+    ➢ Let us dwell deep into Swiggy's business model to
+    understand better what is Swiggy and what model it is made
+    to function.
+    ➢</p></h3>
+</div>
+
+<div id="Abstract" class="tabcontent">
+ <u> <h1> 💁‍♀️Abstract</h1></u>
+  <h3><p> .The main objective of the project is to conduct a survey to identify the
+    number of people using online food services in a particular area. The
+    area selected for conducting is Pinakini Avenue, Ramji Nagar in SPSR
+    Nellore District.The purpose of this research is to find consumer behaviour
+    towards Food Delivery Apps. The study shows most preferred app used
+    by consumer to order food online and factors leading to us consider it
+    the most preferable app. There are many factors related to customer’s
+    ordering behaviour- like price, on time delivery, packaging, peer service
+    provider behaviour, platform design etc. There is gradual shift in way
+    people order food. The purpose of this research is to know what are
+    factors that defines consumer’s perception and to find most popular
+    app in the food delivery industry.The mobile application era has thrown open a new pathway for
+      today’s marketing. The mobile application has made all traditional
+      models of business outdated and generated amazing new possibilities
+      in business. Mobile application is a combination of marketing acumen
+      and technology – uses the Internet as a medium to advertise and sell
+      services and goods. Today, more people are getting connected
+      through mobile application and they are ready to trade through it. It
+      also affects the operation of companies and organizations. Companies
+      have changed their traditional business strategies into online marketing
+      to suit customer needs and taste at any time. This research paper aims
+      to discuss the consumer’s perception towards the online food ordering
+      and delivery services in Pune. The survey was conducted for a
+      purposeful analysis of the study on around 153 respondents. The
+      research is focused on the study and analysis of data collected from all
+      those users who are already using the online food delivery services. The
+      purpose is to know what are the influencing factors, their perceptions,
+      needs, positioning of various attributes of different online portals in
+      their 4mind and overall satisfaction towards online food delivery
+      services. To achieve the objective, data from different areas of Pune
+      have been collected and also visited restaurants to know their point of
+      view. Four parameters are taken under consideration for analysis using positioning study.</p></h3>
+</div>
+
+<div id="data" class="tabcontent"><br/><br/>
+  <h1> 👩‍💻survey data 👩‍💻</h1><br/>
+  <table  width="600">
+    <th width="100">S.no</th>
+  <th width="100" >Name</th>
+  <th width="100">mobile no</th>
+  <th width="100">App used</th>
+  <th width="100">delivery services</th>
+  <th width="100">Most ordered items</th>
+</tr>
+<tr  aligm="center">
+  <td width="100">1</td>
+  <td width="100">Venkateswarlu</td>
+  <td width="100">8984857704</td>
+  <td width="100">Swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Biriyani</td>
+
+</tr>
+<tr  aligm="center">
+  <td width="100">2</td>
+  <td width="100"> M.Sukihaka Rao </td>
+  <td width="100">9502574246  </td>
+  <td width="100">Swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Biriyani</td>
+
+</tr>
+<tr aligm="center">
+  <td width="100">3</td>
+  <td width="100"> o.Arunamma</td>
+  <td width="100">9441004133  </td>
+  <td width="100">Swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">4</td>
+  <td width="100">  V. Penchala Reddy  </td>
+  <td width="100">8072573032  </td>
+  <td width="100">Swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Noodles</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">5</td>
+  <td width="100">  N. Nirmala  </td>
+  <td width="100">9866921681  </td>
+  <td width="100">Swiggy</td>
+  <td width="100">bad</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">6</td>
+  <td width="100">  U.Siva  </td>
+  <td width="100">8374777080  </td>
+  <td width="100">Zomato  </td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">7</td>
+  <td width="100">  K-Ravi  </td>
+  <td width="100">9160824233  </td>
+  <td width="100">swiggy  </td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">8</td>
+  <td width="100">   R.Srihari  </td>
+  <td width="100"> 7989291269</td>
+  <td width="100">Zomato </td>
+  <td width="100">good</td>
+ <td width="100">fried rice</td>
+</tr>
+  <tr  aligm="center">
+  <td width="100">9</td>
+  <td width="100">   p.vinod  </td>
+  <td width="100"> 9959838901  </td>
+  <td width="100">Zomato </td>
+  <td width="100">good</td>
+ <td width="100">fried rice</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">10</td>
+  <td width="100">   G. Lavanya  </td>
+  <td width="100"> 6281824243  </td>
+  <td width="100">Zomato </td>
+  <td width="100">bad</td>
+ <td width="100">fried rice</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">11</td>
+  <td width="100">p..Thrivikram  </td>   
+  <td width="100">  9000592931  </td>
+  <td width="100">Swiggy  </td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">12</td>
+  <td width="100">M.SHarmli  </td>   
+  <td width="100">  9010467861  </td>
+  <td width="100">Zomato  </td>
+  <td width="100">bad</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr aligm="center">
+  <td width="100">13</td>
+  <td width="100">S. Sridhar  </td>   
+  <td width="100">  9704969534  </td>
+  <td width="100">Zomato  </td>
+  <td width="100">Good</td>
+ <td width="100">Noodles</td>
+</tr>
+<tr aligm="center">
+  <td width="100">14</td>
+  <td width="100">K. Ruthwik  </td>   
+  <td width="100">  7337327631  </td>
+  <td width="100">Zomato  </td>
+  <td width="100">Good</td>
+ <td width="100">Noodles</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">15</td>
+  <td width="100"> Y-venuteja  </td>   
+  <td width="100">  9866678632  </td>
+  <td width="100">Zomato  </td>
+  <td width="100">Good</td>
+ <td width="100">Dosa</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">16</td>
+  <td width="100"> P. Meghana  </td>   
+  <td width="100">  8309474277  </td>
+  <td width="100">Swiggy  </td>
+  <td width="100">Good</td>
+ <td width="100">Noodles</td>
+</tr>
+<tr  aligm="center">
+
+  <td width="100">17</td>
+  <td width="100">K.Sameera </td>   
+  <td width="100">  6304885393  </td>
+  <td width="100">Swiggy  </td>
+  <td width="100">Good</td>
+ <td width="100">Noodles</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">18</td>
+  <td width="100">Y. Rojesh  </td>   
+  <td width="100">  8328443979  </td>
+  <td width="100">Zomato  </td>
+  <td width="100">Good</td>
+ <td width="100">Biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">19</td>
+  <td width="100">MD.Bohir  </td>   
+  <td width="100">  9966778123  </td>
+  <td width="100">Zomato  </td>
+  <td width="100">Bad</td>
+ <td width="100">Biriyani</td>
+</tr>
+<tr aligm="center">
+  <td width="100">20</td>
+  <td width="100">SK-Avesha  </td>   
+  <td width="100">  9490022770  </td>
+  <td width="100">Swiggy </td>
+  <td width="100">Good</td>
+ <td width="100">Biriyani</td>
+</tr>
+<tr aligm="center">
+  <td width="100">21</td>
+  <td width="100">E. Himapriya  </td>   
+  <td width="100">  8490022770</td>
+  <td width="100">Swiggy </td>
+  <td width="100">Good</td>
+ <td width="100">Biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">22</td>
+  <td width="100">M.Tharunya </td>   
+  <td width="100">7989160440  </td>
+  <td width="100">Swiggy </td>
+  <td width="100">Good</td>
+ <td width="100">Biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">23</td>
+  <td width="100">G. Haneesha  </td>   
+  <td width="100">9949914099  </td>
+  <td width="100">Swiggy </td>
+  <td width="100">Good</td>
+ <td width="100">Biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">24</td>
+  <td width="100">E.Bhavani  </td>   
+  <td width="100">9347029209  </td>
+  <td width="100">Swiggy </td>
+  <td width="100">Good</td>
+ <td width="100">Dosa</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">25</td>
+  <td width="100">M.Suneetha</td>   
+  <td width="100">9957684040  </td>
+  <td width="100">Swiggy </td>
+  <td width="100">Good</td>
+ <td width="100">Dosa</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">26</td>
+  <td width="100"> G. Sandhya  </td>   
+  <td width="100">9030514558  </td>
+  <td width="100">Swiggy </td>
+  <td width="100">Good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">27</td>
+  <td width="100"> CH-Sreevani  </td>   
+  <td width="100">9515302498 </td>
+  <td width="100">Zomato </td>
+  <td width="100">Good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">28</td>
+  <td width="100">  E. Bhaskar  </td>   
+  <td width="100">9912230618  </td>
+  <td width="100">Zomato </td>
+  <td width="100">bad</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">29</td>
+  <td width="100">  CH-Niranjan  </td>   
+  <td width="100">6381140583  </td>
+  <td width="100">Zomato </td>
+  <td width="100">good</td>
+ <td width="100">ice-cream</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">30</td>
+  <td width="100">  G.Sureshkuman  </td>   
+  <td width="100">6309518548  </td>
+  <td width="100">Swiggy</td>
+  <td width="100">good</td>
+ <td width="100">ice-cream</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">31</td>
+  <td width="100">   CH-Niranjan  </td>   
+  <td width="100">6381140583  </td>
+  <td width="100">zomato</td>
+  <td width="100">good</td>
+ <td width="100">ice-cream</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">32</td>
+  <td width="100">CH.Rameswarao  </td>   
+  <td width="100">9989773187  </td>
+  <td width="100">zomato</td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">33</td>
+  <td width="100">  P.Padma</td>   
+  <td width="100">9848584166 </td>
+  <td width="100">zomato</td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">34</td>
+  <td width="100"> D.Suresh </td>   
+  <td width="100">8712211118 </td>
+  <td width="100">zomato</td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">35</td>
+  <td width="100">S. Sivakumar </td>   
+  <td width="100">8096730369 </td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">36</td>
+  <td width="100">C. Himakumari </td>   
+  <td width="100">9642654116 </td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">37</td>
+  <td width="100">P. Ajay</td>   
+  <td width="100">9492973075 </td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+</tr>
+<tr  aligm="center">
+  <td width="100">38</td>
+  <td width="100">Μ.Καιραπα  </td>   
+  <td width="100">9848427941  </td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Dosa</td>
+</tr>
+<tr aligm="center">
+  <td width="100">38</td>
+  <td width="100">KV-Karthik  </td>   
+  <td width="100">9502243646</td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Dosa</td>
+ </tr>
+ <tr aligm="center">
+  <td width="100">39</td>
+  <td width="100">B. Bindhu  </td>   
+  <td width="100">7013449913  </td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+ </tr>
+ <tr  aligm="center">
+  <td width="100">40</td>
+  <td width="100">N.Parmeela  </td>   
+  <td width="100">8115449913  </td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+ </tr>
+ <tr  aligm="center">
+  <td width="100">41</td>
+  <td width="100">R.Padma</td>   
+  <td width="100"> 9015447713  </td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">biriyani</td>
+ </tr>
+ <tr  aligm="center">
+  <td width="100">42</td>
+  <td width="100">A.Harini</td>   
+  <td width="100">9440708314  </td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Friedrice</td>
+ </tr>
+ <tr aligm="center">
+  <td width="100">43</td>
+  <td width="100">G.Sheshu  </td>   
+  <td width="100">8919954345  </td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Friedrice</td>
+ </tr>
+ <tr  aligm="center">
+  <td width="100">44</td>
+  <td width="100">R.Nirmala  </td>   
+  <td width="100">8688971959</td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Biriyani</td>
+ </tr>
+ <tr  aligm="center">
+  <td width="100">45</td>
+  <td width="100">M.Niresh </td>   
+  <td width="100">961271959</td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Biriyani</td>
+ </tr>
+
+ <tr  aligm="center">
+  <td width="100">46</td>
+  <td width="100">R.Mahesh </td>   
+  <td width="100">971231251</td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Biriyani</td>
+ </tr>
+ <tr  aligm="center">
+  <td width="100">47</td>
+  <td width="100">Y.venkat </td>   
+  <td width="100">867531299</td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">ice-cream</td>
+ </tr>
+ <tr  aligm="center">
+  <td width="100">48</td>
+  <td width="100">K-Radhika  </td>   
+  <td width="100">9505726835</td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">parota</td>
+ </tr>
+ <tr aligm="center">
+  <td width="100">49</td>
+  <td width="100"> T.Nirmala  </td>   
+  <td width="100">9949156222</td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">poori</td>
+ </tr>
+ <tr  aligm="center">
+  <td width="100">50</td>
+  <td width="100">  T. Vasodha.      </td>   
+  <td width="100">8985222784</td>
+  <td width="100">swiggy</td>
+  <td width="100">good</td>
+ <td width="100">Noodles</td>
+ </tr>
+</table>
+<br/>
+<br/>
+<table  width="600">
+  <tr bgcolor="gray">
+    <th width="100">S.no</th>
+  <th width="100" >Name</th>
+  <th width="100">Mobile no</th>
+  <th width="100">Aadhar NO</th>
+  <th width="100">Adress</th>
+
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">1</td>
+    <td width="100">Venkateswarlu</td>
+    <td width="100">8984857704</td>
+    <td width="100">422776363389</td>
+    <td width="100">Ramji Nagar, swetha Sowdham</td>
+   
+  
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">2</td>
+    <td width="100"> M.Sukihaka Rao </td>
+    <td width="100">9502574246  </td>
+    <td width="100">555281838130
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham </td>
+  
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">3</td>
+    <td width="100"> o.Arunamma</td>
+    <td width="100">9441004133  </td>
+    <td width="100">555281838130
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">4</td>
+    <td width="100">  V. Penchala Reddy  </td>
+    <td width="100">8072573032  </td>
+    <td width="100">745400574859
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">5</td>
+    <td width="100">  N. Nirmala  </td>
+    <td width="100">9866921681  </td>
+    <td width="100">745400574859
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham</td>
+
+
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">6</td>
+    <td width="100">  U.Siva  </td>
+    <td width="100">8374777080  </td>
+    <td width="100"> 804286871308
+
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">7</td>
+    <td width="100">  K-Ravi  </td>
+    <td width="100">9160824233  </td>
+    <td width="100"> 351833955439
+    </td>
+   
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">8</td>
+    <td width="100">   R.Srihari  </td>
+    <td width="100"> 7989291269</td>
+    <td width="100"> 808051508911
+
+    </td>
+   
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+    <tr bgcolor="lightgray" aligm="center">
+    <td width="100">9</td>
+    <td width="100">   p.vinod  </td>
+    <td width="100"> 9959838901  </td>
+    <td width="100"> 808051508911
+
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">10</td>
+    <td width="100">   G. Lavanya  </td>
+    <td width="100"> 6281824243  </td>
+    <td width="100">523354607005
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">11</td>
+    <td width="100">p..Thrivikram  </td>   
+    <td width="100">  9000592931  </td>
+    <td width="100"> 711449845616
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">12</td>
+    <td width="100">M.SHarmli  </td>   
+    <td width="100">  9010467861  </td>
+    
+    <td width="100">527615477300
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">13</td>
+    <td width="100">S. Sridhar  </td>   
+    <td width="100">  9704969534  </td>
+    <td width="100"> 220167468240
+    </td>
+   
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">14</td>
+    <td width="100">K. Ruthwik  </td>   
+    <td width="100">  7337327631  </td>
+    <td width="100"> 901909153645
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">15</td>
+    <td width="100"> Y-venuteja  </td>   
+    <td width="100">  9866678632  </td>
+    <td width="100"> 628334482280
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">16</td>
+    <td width="100"> P. Meghana  </td>   
+    <td width="100">  8309474277  </td>
+    <td width="100"> 441042092943 </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">17</td>
+    <td width="100">K.Sameera </td>   
+    <td width="100">  6304885393  </td>
+    <td width="100"> 
+      283860677406
+       </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">18</td>
+    <td width="100">Y. Rojesh  </td>   
+    <td width="100">  8328443979  </td>
+    <td width="100">  987611810021
+
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">19</td>
+    <td width="100">MD.Bohir  </td>   
+    <td width="100">  9966778123  </td>
+    <td width="100"> 631658411437
+
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">20</td>
+    <td width="100">SK-Avesha  </td>   
+    <td width="100">  9490022770  </td>
+    <td width="100"> 993716823812
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">21</td>
+    <td width="100">E. Himapriya  </td>   
+    <td width="100">  8490022770</td>
+    <td width="100"> 292566173970
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">22</td>
+    <td width="100">M.Tharunya </td>   
+    <td width="100">7989160440  </td>
+    <td width="100">398631802988
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">23</td>
+    <td width="100">G. Haneesha  </td>   
+    <td width="100">9949914099  </td>
+    <td width="100"> 436637112937</td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">24</td>
+    <td width="100">E.Bhavani  </td>   
+    <td width="100">9347029209  </td>
+    <td width="100">527864106144
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">25</td>
+    <td width="100">M.Suneetha</td>   
+    <td width="100">9957684040  </td>
+    <td width="100"> 828338107211
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">26</td>
+    <td width="100"> G. Sandhya  </td>   
+    <td width="100">9030514558  </td>
+    <td width="100">422493604419
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">27</td>
+    <td width="100"> CH-Sreevani  </td>   
+    <td width="100">9515302498 </td>
+    <td width="100"> 3322872 49807</td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">28</td>
+    <td width="100">  E. Bhaskar  </td>   
+    <td width="100">9912230618  </td>
+    <td width="100"> 455251904958
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">29</td>
+    <td width="100">  CH-Niranjan  </td>   
+    <td width="100">6381140583  </td>
+    <td width="100">985815485979
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">30</td>
+    <td width="100">  G.Sureshkuman  </td>   
+    <td width="100">6309518548  </td>
+    <td width="100">788750759796
+
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">31</td>
+    <td width="100">   CH-Niranjan  </td>   
+    <td width="100">6381140583  </td>
+    <td width="100">409573931246
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">32</td>
+    <td width="100">CH.Rameswarao  </td>   
+    <td width="100">9989773187  </td>
+    <td width="100">308042534505
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">33</td>
+    <td width="100">  P.Padma</td>   
+    <td width="100">9848584166 </td>
+    <td width="100">930640341444
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">34</td>
+    <td width="100"> D.Suresh </td>   
+    <td width="100">8712211118 </td>
+    <td width="100">555281838130
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">35</td>
+    <td width="100">S. Sivakumar </td>   
+    <td width="100">8096730369 </td>
+    <td width="100">804286871308
+    </td>
+    
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">36</td>
+    <td width="100">C. Himakumari </td>   
+    <td width="100">9642654116 </td>
+    <td width="100">351833955439
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">37</td>
+    <td width="100">P. Ajay</td>   
+    <td width="100">9492973075 </td>
+    <td width="100">808051508911
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">38</td>
+    <td width="100">Μ.Καιραπα  </td>   
+    <td width="100">9848427941  </td>
+    <td width="100">441042092943
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+  </tr>
+  <tr bgcolor="lightgray" aligm="center">
+    <td width="100">38</td>
+    <td width="100">KV-Karthik  </td>   
+    <td width="100">9502243646</td>
+    <td width="100">441042092943
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">39</td>
+    <td width="100">B. Bindhu  </td>   
+    <td width="100">7013449913  </td>
+    <td width="100">283860677406
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">40</td>
+    <td width="100">N.Parmeela  </td>   
+    <td width="100">8115449913  </td>
+    <td width="100">987611810021
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">41</td>
+    <td width="100">R.Padma</td>   
+    <td width="100"> 9015447713  </td>
+    <td width="100">993716823812
+
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">42</td>
+    <td width="100">A.Harini</td>   
+    <td width="100">9440708314  </td>
+    <td width="100">828344107214
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">43</td>
+    <td width="100">G.Sheshu  </td>   
+    <td width="100">8919954345  </td>
+    <td width="100">315363292041
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">44</td>
+    <td width="100">R.Nirmala  </td>   
+    <td width="100">8688971959</td>
+    <td width="100">936014444034
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">45</td>
+    <td width="100">M.Niresh </td>   
+    <td width="100">961271959</td>
+    <td width="100">641052786144
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+  
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">46</td>
+    <td width="100">R.Mahesh </td>   
+    <td width="100">971231251</td>
+    <td width="100">808767460683
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">47</td>
+    <td width="100">Y.venkat </td>   
+    <td width="100">867531299</td>
+    <td width="100">407959312646</td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">48</td>
+    <td width="100">K-Radhika  </td>   
+    <td width="100">9505726835</td>
+    <td width="100">637143669937
+    </td>
+   
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">49</td>
+    <td width="100"> T.Nirmala  </td>   
+    <td width="100">9949156222</td>
+    <td width="100">396318088986
+
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham
+
+   </td>
+   </tr>
+   <tr bgcolor="lightgray" aligm="center">
+    <td width="100">50</td>
+    <td width="100">  T. Vasodha.      </td>   
+    <td width="100">8985222784</td>
+    <td width="100">422449603414
+    </td>
+   <td width="100">Ramji Nagar, swetha Sowdham</td>
+
+
+   </tr>
+</table>
+</div>
+<div id="Graphs" class="tabcontent">
+  <h3>Graphs</h3>
+ <img src="graph1.jpg" width="30%"height="40%" class="graph"/>
+ <img src="graph2.jpg" width="30%"height="40%" class="graph"/>
+ <img src="graph3.jpg" width="30%"height="40%" class="graph"/>
+</div>
+<div id="queries" class="tabcontent">
+  <h1>LET'S TALK...&#9758;</h1>
+  <h2>
+  <form action="test.php" method="post">
+  <div class="container">
+    <h2>Food Survey</h2>
+    <form action="test.php" method="POST">
+        <label for="name">Name:</label>
+
+        <input type="text" id="name" name="name"  placeholder="name" required><br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" placeholder="age" required><br><br>
+
+        <label for="phno">Phone Number:</label>
+        <input type="text" id="phno" name="phno"placeholder="phno" required><br><br>
+
+        <label for="food">Favorite Food:</label><br>
+        <input type="text" id="food" name="food" required><br><br>
+
+        <label for="factors">Factors Influencing Choice:</label><br><br>
+        <input type="text" id="factors" name="factors" required><br><br>
+
+        <label for="improvements">Suggestions for Improvement:</label><br><br>
+        <textarea id="improvements" name="improvements" rows="3" required></textarea><br><br>
+
+        <button type="submit">Submit</button><br><br>
+    </form>
+</div>
+ 
+  </h2>
+</form>
+
+
+  
+
+</div>
+<div id="usuage" class="tabcontent">
+  <h1>usuage 👍</h1>
+  <h3>
+  Usage of the "Survey on Food Delivery Apps Being Used by People"
+The survey on food delivery apps aims to gather valuable insights into how people use these services, what their preferences are, and how satisfied they are with the current offerings. Here's how you can use the results of this survey:
+
+1. Identify Popular Food Delivery Apps
+Objective: Determine which food delivery apps are the most popular among users.
+Usage: Companies can focus on competitive analysis, partnerships, and market strategies based on the most popular apps.
+2. Understand Usage Frequency
+Objective: Find out how often people use food delivery services (e.g., daily, weekly, monthly, rarely).
+Usage: Businesses can tailor their marketing campaigns to target heavy users with loyalty programs and light users with incentives to increase usage.
+3. Explore Factors Influencing App Choice
+Objective: Understand the key factors that influence the choice of a food delivery app, such as delivery speed, food quality, app interface, and discounts.
+Usage: App developers and service providers can prioritize features and improvements based on what users value the most.
+4. Measure User Satisfaction
+Objective: Gauge overall user satisfaction with food delivery apps on a scale of 1 to 5.
+Usage: Companies can identify strengths and weaknesses in their service and make data-driven decisions to enhance user satisfaction.
+5. Gather Suggestions for Improvement
+Objective: Collect open-ended feedback on what users think can be improved in food delivery apps.
+Usage: Product development teams can use this feedback to implement changes and innovations that address user pain points and improve the overall user experience.
+Example Scenarios for Using Survey Data
+App Development:
+
+Scenario: A food delivery app developer learns that users prioritize a user-friendly interface and fast delivery times.
+Action: Focus on optimizing the app interface for easier navigation and improving logistics to reduce delivery times.
+Marketing Strategies:
+
+Scenario: The survey reveals that discounts and offers are a significant factor for many users.
+Action: Develop targeted marketing campaigns that highlight special deals and loyalty programs to attract and retain customers.
+Customer Service Improvements:
+
+Scenario: User feedback indicates dissatisfaction with customer service response times.
+Action: Invest in better customer support infrastructure, such as 24/7 helplines and quicker response times to enhance user satisfaction.
+Market Expansion:
+
+Scenario: Data shows high satisfaction and frequent use in specific regions.
+Action: Consider expanding marketing efforts or services in those high-usage regions to capitalize on existing customer satisfaction and usage trends.
+Partnerships and Promotions:
+
+Scenario: Popularity data shows a significant user base for a particular food delivery app.
+Action: Restaurants and food chains might consider exclusive partnerships or promotions with that app to reach a larger audience.
+Example Summary Report
+An example summary report based on the survey results could look like this:
+
+Summary Report: Survey on Food Delivery Apps Being Used by People
+Introduction:
+
+Conducted an online survey with 500 participants to understand the usage and preferences of food delivery app users.
+Key Findings:
+
+Popular Apps: Uber Eats (45%), DoorDash (30%), Grubhub (15%), Others (10%).
+Usage Frequency: 40% use daily, 35% weekly, 15% monthly, 10% rarely.
+Factors Influencing Choice: Delivery speed (70%), food quality (65%), discounts (50%), app interface (40%).
+User Satisfaction: Average rating of 4.2 out of 5.
+Suggestions for Improvement: Faster delivery times, better customer service, more restaurant options.
+Conclusion:
+The survey highlights the importance of delivery speed and food quality for users. High satisfaction levels suggest that users are generally pleased with the services, but there is room for improvement in customer service and delivery times.
+
+Recommendations:
+
+For Developers: Focus on enhancing app interfaces and optimizing delivery logistics.
+For Marketers: Promote discounts and loyalty programs to attract more frequent usage.
+For Customer Service: Invest in better support infrastructure to address user concerns more efficiently.</h3>
+
+  <table border="5px" width="400">
+    <tr>
+      <th width="100">S.NO</th>
+      <th width="100">Options</th>
+      <th width="100">No.of respondents</th>
+      <th width="100">percentages</th>
+</tr>
+<tr>
+  <td width="100">1</td>
+  <td width="100">Swiggy</td>
+  <td width="100">29</td>
+  <td width="100">57%</td>
+  
+</tr>
+<tr>
+  <td width="100">2</td>
+  <td width="100">Zomato</td>
+  <td width="100">21</td>
+  <td width="100">43%</td>
+</tr>
+<tr>
+  <td width="100"></td>
+  <td width="100">Total</td>
+  <td width="100">50</td>
+  <td width="100">100%</td>
+</tr>
+
+  </table>
+</div>
+<div id="Contact" class="tabcontent">
+ <h1> &#10084;our team details&#129505;</h1>
+<h2 style="color:darkblue">Tharunya Mannepalli👩‍🎓</h2>
+<h2 style="color:darkblue">Nikhitha Cheemaladinne👩‍🎓 </h2>
+<h2 style="color:darkblue">Haneesha Grandhi👩‍🎓</h2>
+<h2 style="color:darkblue">Himapriya Estamsetty 👩‍🎓</h2>
+<h2>any queries:contact us:<a href="">mannepallitharunya@gmail.com</a>
+</h2>
+<h2>for more details visit our ppt:<a href="ppt final.pptm">PPT</h2>
+  <h2>for more details visit our word:<a href="word.pdf">word</h2>
+
+<div id="con"><img src="1.jpg" />
+  <img src="2.jpg" />
+  <img src="4.jpg" />
+  <img src="3.jpg" />
+  <img src="5.jpg" />
+</div>
+  
+  
+ <h1>...THIS IS ABOUT US...</h1><br/>
+ <h1>THANK YOU</h1>
+  
+</div>
+
+
+
+</body>
+</html>
